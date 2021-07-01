@@ -1,0 +1,198 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    /* font-family: 'Akaya Kanadaka', cursive; */
+}
+
+body
+{
+    background-color: #fca5a5;
+}
+
+/* mainmenu */
+.containermenu
+{
+    transform: translateY(0px);
+    transition: all 1s;
+     /* width: 60%;  */
+    width: 250px;  
+    position: fixed;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    z-index: 1000;
+    background-color: rgba(96, 165, 250, 0.6)
+}
+
+.containermenu:hover
+{
+    width: 60%;
+}
+
+.containermenu h1
+{
+    font-family: 'Akaya Kanadaka', cursive;
+    transition: .5s;
+    z-index: 2;
+}
+
+.containermenu:hover h1
+{
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.underline 
+{
+    position: absolute;
+    width: 0px;
+    height: 4px;
+    bottom: 5px;
+    left: 1.5rem;
+    z-index: 1;
+    opacity: 0;
+    transition: all 1s;
+    border-radius: 0 4px 4px 0;
+}
+
+.containermenu:hover .underline
+{
+    opacity: 1;
+    width: 115px;
+    background-color: white;
+}
+
+ul
+{
+    height: 2.5rem;
+}
+
+ul li
+{
+    font-family: 'Josefin Sans', sans-serif;
+    position: relative;
+    width: 80px;
+    background-color: rgba(191, 219, 254, 0.7);
+    height: calc(2.5rem - 3px);
+    transition: 0.4s;
+    margin-top: 12px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-right: 5px;
+    z-index: 0;
+}
+
+ul li:hover:nth-child(1) 
+{
+    margin-top: 3px;
+    background-color: #fcd34d;
+    font-weight: 700;
+}
+
+ul li:hover:nth-child(2) 
+{
+    margin-top: 3px;
+    background-color: #34d399;
+    font-weight: 700;
+}
+
+ul li:hover:nth-child(3) 
+{
+    margin-top: 3px;
+    background-color: #f87171;
+    font-weight: 700;
+}
+
+/* about me */
+.containerme
+{
+    opacity: 1;
+    width: 300px;
+    height: 230px;
+    background-color: rgba(255, 255, 255, 0.4);
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 0 5px 50px 20px;
+    transition: 1.5s;
+}
+
+.containerme::before
+{
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 230px;
+    background-color: #fca5a5;
+    clip-path: circle(150px at 10% -20%);
+    transition: 1s;
+}
+
+.containerme:hover::before
+{
+    clip-path: circle(300px at 10% -10%);
+}
+
+.containerme:hover
+{
+    width: 60%;
+    opacity: 1;
+    border: 4px solid #fca5a5;;
+}
+
+.data h1
+{
+    font-family: 'Akaya Kanadaka', cursive;
+    opacity: 1;
+    transform: translateY(40px);
+    transition: 1s;
+}
+
+.containerme:hover .data h1
+{
+    transform: translateY(0px);
+}
+
+.data p
+{
+    font-family: 'Akaya Kanadaka', cursive;
+    opacity: 0;
+    transform: translateX(-150px);
+    transition: 1.5s;
+    font-size: 20px;
+}
+
+.containerme:hover .data p
+{
+    transition-delay: 1s;
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.fonts
+{
+    font-family: 'Akaya Kanadaka', cursive;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.imageme
+{
+    transition: 0.5s;
+    transform: translateY(60px);
+}
+
+.imageme:hover
+{
+    transform: scale(1.4);
+}
+
+
+
+
+
+
+
+
+
+
