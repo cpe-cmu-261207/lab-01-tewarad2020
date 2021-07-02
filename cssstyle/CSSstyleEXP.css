@@ -1,0 +1,261 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    /* font-family: 'Akaya Kanadaka', cursive; */
+}
+
+body
+{
+    background-color: #6ee7b7;
+    padding-bottom: 20px;
+}
+
+/* bg */
+.fonts
+{
+    font-family: 'Akaya Kanadaka', cursive;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+/* mainmenu */
+.containermenu
+{
+    transform: translateY(0px);
+    transition: all 1s;
+     /* width: 60%;  */
+    width: 250px;  
+    position: fixed;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    z-index: 1000;
+    background-color: rgba(96, 165, 250, 0.6)
+}
+
+.containermenu:hover
+{
+    width: 60%;
+}
+
+.containermenu h1
+{
+    font-family: 'Akaya Kanadaka', cursive;
+    transition: .5s;
+    z-index: 2;
+}
+
+.containermenu:hover h1
+{
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.underline 
+{
+    position: absolute;
+    width: 0px;
+    height: 4px;
+    bottom: 5px;
+    left: 1.5rem;
+    z-index: 1;
+    opacity: 0;
+    transition: all 1s;
+    border-radius: 0 4px 4px 0;
+}
+
+.containermenu:hover .underline
+{
+    opacity: 1;
+    width: 115px;
+    background-color: white;
+}
+
+ul
+{
+    height: 2.5rem;
+}
+
+ul li
+{
+    font-family: 'Josefin Sans', sans-serif;
+    position: relative;
+    width: 80px;
+    background-color: rgba(191, 219, 254, 0.7);
+    height: calc(2.5rem - 3px);
+    transition: 0.4s;
+    margin-top: 12px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-right: 5px;
+    z-index: 0;
+}
+
+ul li:hover:nth-child(1) 
+{
+    margin-top: 3px;
+    background-color: #f87171;
+    font-weight: 700;
+    color: white;
+}
+
+ul li:hover:nth-child(1) svg
+{
+    fill: white;
+}
+
+ul li:hover:nth-child(2) 
+{
+    margin-top: 3px;
+    background-color: #34d399;
+    font-weight: 700;
+    color: white;
+}
+
+ul li:hover:nth-child(2) svg
+{
+    fill: white;
+}
+
+ul li:hover:nth-child(3) 
+{
+    margin-top: 3px;
+    background-color: #fcd34d;
+    font-weight: 700;
+    color: white;
+}
+
+ul li:hover:nth-child(3) svg
+{
+    fill: white;
+}
+
+/* my exp */
+.containerexp
+{
+    font-family: 'Akaya Kanadaka', cursive;
+    width: 60%;
+    height: 770px;
+    top: 400px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 0 30px 0 30px;
+}
+
+/* card */
+.box
+{
+    font-family: 'Akaya Kanadaka', cursive;
+    position: relative;
+    width: 250px;
+    height: 370px;
+    left: 50px;
+    top: 50px;
+    border-radius: 10px;
+}
+
+.onetothree .box:nth-child(1)
+{
+    background-color: #fcd34d;
+}
+
+.onetothree .box:nth-child(2)
+{
+    background-color: #f87171;
+}
+
+.onetothree .box:nth-child(3)
+{
+    background-color: #34d399;
+}
+
+.fourtosix .box:nth-child(1)
+{
+    background-color: #f472b6;
+}
+
+.fourtosix .box:nth-child(2)
+{
+    background-color: #60a5fa;
+}
+
+.fourtosix .box:nth-child(3)
+{
+    background-color: #9ca3af
+}
+
+
+.card
+{
+    position: absolute;
+    width: 210px;
+    height: 310px;
+    background-color: rgba(22, 22, 22, 0.7);
+    top: 45px;
+    left: 20px;
+    z-index: 1;
+    border-radius: 15px;
+    transition: top 1s, z-index 0s, transform 1s;
+    transition-delay: 0.6s, 0.6s, 0s; 
+}
+
+.box .card:hover 
+{
+    transition-delay: 0s,0.6s,0.6s;
+    top: -180px;
+    z-index: 2;
+    transform: translateY(220px);
+}
+
+.frontbox
+{
+    position: absolute;
+    width: 230px;
+    height: 200px;
+    top: 160px;
+    left: 10px;
+    border-radius: 0 0 10px 10px;
+    z-index: 1;
+}
+
+.onetothree .box:nth-child(1) .frontbox
+{
+    background-color: #f59e0b;
+}
+
+.onetothree .box:nth-child(2) .frontbox
+{
+    background-color: #d82c2c;
+}
+
+.onetothree .box:nth-child(3) .frontbox
+{
+    background-color: #059669;
+}
+
+.fourtosix .box:nth-child(1) .frontbox
+{
+    background-color: #db2777;
+}
+
+.fourtosix .box:nth-child(2) .frontbox
+{
+    background-color: #2563eb;
+}
+
+.fourtosix .box:nth-child(3) .frontbox
+{
+    background-color: #4b5563
+}
+
+.onetothree .box:nth-child(1) img
+{
+    position: absolute;
+    width: 90%;
+    height: 150px;
+    top: 25px;
+    left: 12px;
+    border-radius: 0 15px 0 15px;
+}
+
+

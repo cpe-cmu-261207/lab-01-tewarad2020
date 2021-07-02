@@ -13,6 +13,14 @@ body
     padding-bottom: 20px;
 }
 
+/* bg */
+.fonts
+{
+    font-family: 'Akaya Kanadaka', cursive;
+    font-style: italic;
+    text-decoration: underline;
+}
+
 /* mainmenu */
 .containermenu
 {
@@ -87,8 +95,14 @@ ul li
 ul li:hover:nth-child(1) 
 {
     margin-top: 3px;
-    background-color: #fcd34d;
+    background-color: #f87171;
     font-weight: 700;
+    color: white;
+}
+
+ul li:hover:nth-child(1) svg
+{
+    fill: white;
 }
 
 ul li:hover:nth-child(2) 
@@ -96,13 +110,26 @@ ul li:hover:nth-child(2)
     margin-top: 3px;
     background-color: #34d399;
     font-weight: 700;
+    color: white;
+}
+
+ul li:hover:nth-child(2) svg
+{
+    fill: white;
 }
 
 ul li:hover:nth-child(3) 
 {
     margin-top: 3px;
-    background-color: #f87171;
+    background-color: #fcd34d;
     font-weight: 700;
+    color: white;
+    fill: white;
+}
+
+ul li:hover:nth-child(3) svg
+{
+    fill: white;
 }
 
 /* about me */
@@ -169,13 +196,6 @@ ul li:hover:nth-child(3)
     transition-delay: 1s;
     opacity: 1;
     transform: translateX(0px);
-}
-
-.fonts
-{
-    font-family: 'Akaya Kanadaka', cursive;
-    font-style: italic;
-    text-decoration: underline;
 }
 
 .imageme
