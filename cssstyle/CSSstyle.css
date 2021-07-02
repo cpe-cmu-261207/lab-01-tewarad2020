@@ -10,6 +10,7 @@
 body
 {
     background-color: #fca5a5;
+    padding-bottom: 20px;
 }
 
 /* mainmenu */
@@ -137,7 +138,7 @@ ul li:hover:nth-child(3)
 {
     width: 60%;
     opacity: 1;
-    border: 4px solid #fca5a5;;
+    border: 4px solid #fca5a5;
 }
 
 .data h1
@@ -151,6 +152,7 @@ ul li:hover:nth-child(3)
 .containerme:hover .data h1
 {
     transform: translateY(0px);
+    color: black;
 }
 
 .data p
@@ -186,6 +188,170 @@ ul li:hover:nth-child(3)
 {
     transform: scale(1.4);
 }
+
+/* my history */
+.containerhis
+{
+    font-family: 'Akaya Kanadaka', cursive;
+    width: 60%;
+    height: 770px;
+    top: 400px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 0 30px 0 30px;
+}
+
+.containerhis h1
+{
+    font-family: 'Akaya Kanadaka', cursive; 
+    text-decoration: underline;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.bgcircle svg
+{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    z-index: 1000;
+}
+
+.bgcircle svg circle
+{
+    width: 100%;
+    height: 100%;
+    fill:none;
+    stroke: rgba(255, 255, 255, 0.6);
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px,5px);
+}
+
+.cir:nth-child(1) svg circle:nth-child(2)
+{
+    stroke-dasharray: 440;
+    stroke-dashoffset: calc(440 - 440 * 1 / 100);
+    stroke: #f87171;
+    transition: 1s;
+}
+
+.cir:nth-child(1):hover svg circle:nth-child(2)
+{
+    stroke-dashoffset: calc(440 - 440 * 72 / 100);
+}
+
+.cir:nth-child(1):hover .per1
+{
+    transform: scale(1.5);
+    color: #f87171;
+}
+
+h2
+{
+    transition: 0.75s;
+}
+
+.cir:nth-child(1):hover h2
+{
+    color: #f87171;
+    text-decoration: underline;
+}
+
+.cir:nth-child(2) svg circle:nth-child(2)
+{
+    stroke-dasharray: 440;
+    stroke-dashoffset: calc(440 - 440 * 1 / 100);
+    stroke: #34d399;
+    transition: 1s;
+}
+
+.cir:nth-child(2):hover svg circle:nth-child(2)
+{
+    stroke-dashoffset: calc(440 - 440 * 60 / 100);
+}
+
+.cir:nth-child(2):hover .per2
+{
+    transform: scale(1.5);
+    color: #34d399;
+}
+
+.cir:nth-child(2):hover h2
+{
+    color: #34d399;
+    text-decoration: underline;
+}
+
+.cir:nth-child(3) svg circle:nth-child(2)
+{
+    stroke-dasharray: 440;
+    stroke-dashoffset: calc(440 - 440 * 1 / 100);
+    stroke: #fcd34d;
+    transition: 1s;
+}
+
+.cir:nth-child(3):hover svg circle:nth-child(2)
+{
+    stroke-dashoffset: calc(440 - 440 * 36 / 100);
+}
+
+.cir:nth-child(3):hover .per3
+{
+    transform: scale(1.5);
+    color: #fcd34d;
+}
+
+.cir:nth-child(3):hover h2
+{
+    color: #fcd34d;
+    text-decoration: underline;
+}
+
+.cir:nth-child(1)
+{
+    border-radius: 80px 0 0 80px;
+}
+
+.cir:nth-child(2)
+{
+    border-radius: 0 80px 80px 0;
+}
+
+.cir:nth-child(3)
+{
+    border-radius: 80px 0 0 80px;
+}
+
+.per1
+{
+    position: absolute;
+    top: 165px;
+    left: 110px;
+    font-size: 45px;
+    transition: 1.5s;
+}
+
+.per2
+{
+    position: absolute;
+    top: 380px;
+    left: 630px;
+    font-size: 45px; 
+    transition: 1.5s;
+}
+
+.per3
+{
+    position: absolute;
+    top: 585px;
+    left: 110px;
+    font-size: 45px;
+    transition: 1.5s;
+}
+
+
+
+
 
 
 
