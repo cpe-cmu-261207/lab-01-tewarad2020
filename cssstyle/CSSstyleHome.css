@@ -144,6 +144,8 @@ ul li:hover:nth-child(3) svg
     border-radius: 0 5px 50px 20px;
     transition: 1.5s;
     transition-delay: 0.95s;
+    margin-top: 11rem;
+    margin-left: 20rem;
 }
 
 .containerme::before
