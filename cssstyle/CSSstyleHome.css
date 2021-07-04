@@ -236,7 +236,7 @@ ul li:hover:nth-child(3) svg
     position: relative;
     width: 150px;
     height: 150px;
-    z-index: 1000;
+    z-index: 10;
 }
 
 .bgcircle svg circle
